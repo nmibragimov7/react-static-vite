@@ -4,7 +4,7 @@ import url from 'node:url'
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production' || true
 const toAbsolute = (p) => path.resolve(__dirname, p)
 
 const manifest = isProduction
